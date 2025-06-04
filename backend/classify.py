@@ -73,7 +73,7 @@ def classify_transactions(df: pd.DataFrame) -> pd.DataFrame:
     categories = []
     confidences = []
 
-    for _, row in df.head(3).iterrows():
+    for _, row in df.iterrows():
         cat, conf = hf_llama_classify(row['description'], row['amount'])
         categories.append(cat)
         confidences.append(conf)
