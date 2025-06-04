@@ -82,4 +82,11 @@ uvicorn backend.main:app --reload
 
 Server will be running at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
+### 6. Run the frontend app from the myfinancepal_frontend repo
+```bash
+npm run dev
+```
+
+This will launch the user interface at [http://localhost:3000](http://localhost:3000)
+
 ---
